@@ -51,7 +51,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 </p>
 <p>
   
-2.) After this step we are going to click on next until we get to the networking page and it should automatically create a virtual network and subnet for us. 
+2.) Once we complete the previous step, proceed by clicking "Next" continuously until we reach the networking page. At this stage, the system will automatically generate a virtual network and subnet on our behalf. 
   
 
 <p>
@@ -60,9 +60,14 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <p>
   
   Click review and create our VM.
-  
-  Now that we have created our first VM we are going to go ahead and create our second VM, but this time it will be a Ubuntu Server 20.04 LTS machine. It will be the same process as creating our first machine but instead we are going to switch the SSH public key to password instead. 
-  
+
+Having successfully created our first VM, we'll now proceed to create the second VM. This time, we'll be setting up an Ubuntu Server 20.04 LTS machine. The process will be similar to creating the first machine, but with one change: we'll switch from using an SSH public key to a password for authentication. Follow these steps to create the second VM:
+
+Begin by initiating the VM creation process as before.
+Select "Ubuntu Server 20.04 LTS" as the operating system for the second virtual machine.
+It will be the same process as creating our first machine but instead we are going to switch the SSH public key to password instead of the SSH public key.
+By following these steps, we'll have our second VM set up and ready to use.
+    
 <p>
 <img src="https://imgur.com/0KT3Fmb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
