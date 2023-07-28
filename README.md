@@ -30,8 +30,15 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
+1.) Let's begin by creating a resource group to accommodate both virtual machines. Once the resource group is set up, we'll proceed to create the first virtual machine, which will be a Windows 10 Virtual Machine. Follow these steps:
 
- 1.) The first thing we are going to do is create a resource group so we can put both of our virtual machines in. Once we have our resource group made we then want to make our first virtual machine. The first virtual machine we are going to make is a Windows 10 vm. Select the resource you made, and then name the virtual machine VM1. Make sure you select Windows 10 Pro, version 22H as the operating system. As for the size of the machine we are going to want atleast 2 vcpus, and 16 gb of memory. Create a username and password of your choosing, and keep the inbound port rules as the default options.
+- Start by creating a resource group to house both virtual machines.
+- Once the resource group is ready, proceed to create the first virtual machine.
+- The first virtual machine will be named "VM1." When prompted to choose the operating system, select "Windows 10 Pro, version 22H."
+- For the virtual machine's specifications, opt for a minimum of 2 VCPUs and 16 GB of memory.
+- During setup, choose a username and password as per your preference.
+- Ensure that the inbound port rules remain set to their default configurations.
+
 
 <p>
 <img src="https://imgur.com/WgPD275.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
