@@ -78,9 +78,7 @@ By following these steps, we'll have our second VM set up and ready to use.
 </p>
 <p>
   
-  Click next until we get to the networking page again.
-  
-  The networking should automatically give us the virtual network from VM1 as well as the subnet. 
+ We get to the next step by clicking "Next" repeatedly until we reach the networking page again. At this stage, the networking settings will automatically provide us with the virtual network from VM1, along with the associated subnet.
   
 <p>
 <img src="https://imgur.com/3fQXRcw.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -89,11 +87,11 @@ By following these steps, we'll have our second VM set up and ready to use.
  
  Click review and create, and it will create our second VM.
  
- 2.) Now that we have both virtual machines up and running we are going to connect to our Windows 10 vm using the remote desktop connection app. Once we are connected we are going to go to our browser and download and install Wireshark.
- 
- "Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education." 
- 
- 3.) Open wireshark and filter for ICMP traffic only.
+ 2.)With both virtual machines now operational, next we will connect to the Windows 10 VM using the remote desktop connection app. Once we are connected, we'll open our web browser and proceed to download and install Wireshark.
+
+"Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education."
+
+Open Wireshark and filter to display only ICMP traffic.
  
  <p>
 <img src="https://imgur.com/RrtChUe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -101,6 +99,11 @@ By following these steps, we'll have our second VM set up and ready to use.
 <p>
  
  4.) We are going to want to retrieve the private IP address of our Ubuntu VM and then attempt to ping it from within our Windows 10 VM using wireshark. To ping the private IP address of the Ubuntu machine open CMD or Powershell on the Windows machine and type: ping 10.0.0.5 or whatever the private IP address is for your Ubuntu machine.
+
+ Now we are going to retrieve the private IP address of our Ubuntu VM, then attempt to ping it from our Windows 10 VM using wireshark.
+
+To initiate the ping, open either CMD or PowerShell on the Windows machine and type: ping 10.0.0.5.
+By executing this command, we will be attempting to ping the Ubuntu VM from the Windows 10 VM, and Wireshark will capture the network traffic for analysis.
  
 <p>
 <img src="https://imgur.com/zmJzyne.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -114,9 +117,9 @@ By following these steps, we'll have our second VM set up and ready to use.
  
  In either CMD or Powershell ping www.google.com and observe the traffic in wireshark.
  
-5.) We then are going to initiate a non-stop ping from our Windows 10 VM to our Ubuntu VM.
+5.) Next we are going to initiate a continuous ping from our Windows 10 VM to our Ubuntu VM.
  
-6.) Open the Network Security Group of our Ubuntu machine and disable incoming (inbound) ICMP traffic. To disable incoming ICMP traffic click "Add" new rule and copy everything exactly from the picture. Once that is done you can create the rule and it will create automatically and show up as a new rule.
+6.) Open the Network Security Group of our Ubuntu machine and disable incoming (inbound) ICMP traffic. We disable incoming ICMP traffic by clicking "Add" new rule and copying everything exactly from the picture. Once that is done we can create the rule and it will create automatically and show up as a new rule.
  
  <p>
 <img src="https://imgur.com/r3dH3Yy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
