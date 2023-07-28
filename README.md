@@ -30,7 +30,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
-1.) Let's begin by creating a resource group to accommodate both virtual machines. Once the resource group is set up, we'll proceed to create the first virtual machine, which will be a Windows 10 Virtual Machine. Follow these steps:
+1.) Let's begin by creating a resource group in Microsoft Azure to accommodate both virtual machines. Once the resource group is set up, we'll proceed to create the first virtual machine, which will be a Windows 10 Virtual Machine. Follow these steps:
 
 - Start by creating a resource group to house both virtual machines.
 - Once the resource group is ready, proceed to create the first virtual machine.
